@@ -1,0 +1,334 @@
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+.promo-section {
+  height: 700px;
+  background-image: url("../../../assets/images/Shape.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+  padding: 80px 80px;
+}
+.promo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.promo-text {
+  flex: 1;
+  gap: 24px;
+}
+.promo-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.promo-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+.promo-btn {
+  background-color: transparent;
+  color: var(--color-yellow);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid var(--color-yellow);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.promo-btn:hover {
+  background-color: var(--color-button-hover);
+  color: #0d1f13;
+}
+.promo-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.promo-image img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.recipes-section {
+  height: 586px;
+  padding: 80px 80px;
+  background-color: #ffffff;
+}
+
+.recipes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.recipes-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0d1f13;
+}
+
+.explore-link {
+  font-size: 16px;
+  color: var(--color-yellow);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.explore-link span {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.recipes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipe-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: start;
+  color: var(--color-white);
+  z-index: 1;
+}
+
+.temp-section {
+  height: 507px;
+  padding: 80px;
+  gap: 80px;
+  background-color: var(--color-background-section);
+}
+
+.services-section {
+  height: 554px;
+  padding: 80px 80px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.services-section .title h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+.container-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+.card .avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+.expirience-section {
+  height: 735px;
+  padding: 80px 80px;
+  background-color: #6d0101;
+  text-align: center;
+}
+
+.reservation-section {
+  height: 808;
+  background-image: url("../../../assets/images/Shape1.png");
+  background-size: cover;
+  background-position: center;
+  padding: 160px 80px 160px 80px;
+  gap: 80px;
+  background-color: #ffffff;
+  color: #0d1f13;
+}
+
+@media screen and (max-width: 1024px) {
+  .promo-section {
+    height: auto;
+    padding: 20px;
+  }
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-text {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .promo-text h1 {
+    font-size: 2rem;
+  }
+
+  .promo-text p {
+    font-size: 1rem;
+  }
+
+  .promo-btn {
+    font-size: 0.9rem;
+  }
+
+  .promo-image {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .promo-text p {
+    font-size: 0.9rem;
+  }
+
+  .promo-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .recipes-section {
+    height: auto;
+    padding: 20px;
+  }
+  .recipes-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .recipes-header .explore-link {
+    font-size: 0.9rem;
+  }
+
+  .recipe-card {
+    margin: 0 auto;
+  }
+  .temp-section {
+    height: auto;
+    padding: 20px;
+  }
+  .services-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .expirience-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .reservation-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .services-section .title h1 {
+    font-size: 2rem;
+  }
+
+  .container-card {
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .promo-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .promo-text p {
+    font-size: 0.8rem;
+  }
+
+  .promo-btn {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+
+  .recipes-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .recipes-header .explore-link {
+    font-size: 0.8rem;
+  }
+
+  .recipe-info {
+    font-size: 0.9rem;
+  }
+  .services-section .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card .avatar {
+    width: 70px;
+    height: 70px;
+  }
+}

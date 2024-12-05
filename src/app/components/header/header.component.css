@@ -1,0 +1,111 @@
+
+.header {
+  background-color: #001405;
+  color: var(--color-white);
+  padding: 24px 80px 24px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-list li a:hover {
+  color: #ffffff;
+}
+
+.contact-btn {
+  background-color: var(--color-yellow);
+  border: none;
+  color: var(--color-white);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+}
+
+.contact-btn:hover {
+  background-color: #ffc107;
+  color: #001405;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a nuevas líneas */
+}
+  .nav {
+    display: none;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 70px; 
+    left: 0;
+  }
+  .menu-toggle {
+    display: block;
+  } 
+  .nav.open {
+    display: block;
+  }
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .nav-list li {
+    margin: 15px 0;
+  }
+  .contact-btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

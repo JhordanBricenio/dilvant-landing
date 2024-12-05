@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-yellow: #d4a206;
+  --color-button-hover: #b9962b;
+  --color-white: #ffffff;
+  --color-background-section: #001405;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+

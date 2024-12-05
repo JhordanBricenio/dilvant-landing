@@ -1,0 +1,17 @@
+<header class="header">
+    <div class="header-container">
+        <div class="title">Dilvant</div>
+        <button class="menu-toggle" aria-label="Abrir menú" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav" [class.open]="isMenuOpen">
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Reservas</a></li>
+            </ul>
+        </nav>
+        <button class="contact-btn">Contacto</button>
+    </div>
+</header>
