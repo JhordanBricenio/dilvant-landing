@@ -6,7 +6,7 @@ h1 {
 }
 .promo-section {
   height: 700px;
-  background-image: url("../../../assets/images/Shape.png");
+  background-image: url("../../../assets/images/Shape.webp");
   background-size: cover;
   background-position: center;
   background-color: #ffffff;
@@ -101,6 +101,7 @@ h1 {
 }
 
 .recipe-card {
+  position: relative;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -124,7 +125,6 @@ h1 {
   font-weight: bold;
   text-align: start;
   color: var(--color-white);
-  z-index: 1;
 }
 
 .temp-section {
@@ -189,7 +189,7 @@ h1 {
 
 .reservation-section {
   height: 808;
-  background-image: url("../../../assets/images/Shape1.png");
+  background-image: url("../../../assets/images/Shape1.webp");
   background-size: cover;
   background-position: center;
   padding: 160px 80px 160px 80px;
