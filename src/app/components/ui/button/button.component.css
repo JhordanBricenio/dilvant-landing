@@ -1,0 +1,15 @@
+button.btn-primary {
+  background-color: transparent;
+  color: var(--color-yellow);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid var(--color-yellow);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button.btn-primary:hover {
+  background-color: var(--color-button-hover);
+  color: #0d1f13;
+}
