@@ -9,6 +9,12 @@
   --color-button-hover: #b9962b;
   --color-white: #ffffff;
   --color-background-section: #001405;
+
+  --font-small: 0.8rem;
+  --font-medium: 0.9rem;
+  --font-large: 1rem;
+  --padding-small: 6px 12px;
+  --padding-medium: 8px 16px;
 }
 
 body {

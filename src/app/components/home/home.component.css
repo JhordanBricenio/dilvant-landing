@@ -184,10 +184,16 @@ h1 {
 }
 
 @media screen and (max-width: 1024px) {
-  .promo-section {
+  .promo-section,
+  .recipes-section,
+  .temp-section,
+  .services-section,
+  .expirience-section,
+  .reservation-section {
     height: auto;
     padding: 20px;
   }
+
   .promo-container {
     flex-direction: column;
     align-items: center;
@@ -199,16 +205,16 @@ h1 {
     margin-bottom: 20px;
   }
 
-  .promo-text h1 {
+  .promo-heading {
     font-size: 2rem;
   }
 
-  .promo-text p {
+  .promo-paragraph {
     font-size: 1rem;
   }
 
   .promo-btn {
-    font-size: 0.9rem;
+    font-size: var(--font-medium);
   }
 
   .promo-image {
@@ -217,56 +223,25 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  .promo-text h1 {
+  .promo-heading {
     font-size: 1.8rem;
   }
 
-  .promo-text p {
-    font-size: 0.9rem;
+  .promo-paragraph {
+    font-size: var(--font-medium);
   }
 
   .promo-btn {
-    padding: 8px 16px;
-    font-size: 0.8rem;
+    padding: var(--padding-medium);
+    font-size: var(--font-small);
   }
 
-  .recipes-section {
-    height: auto;
-    padding: 20px;
-  }
   .recipes-header h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
   }
 
   .recipes-header .explore-link {
-    font-size: 0.9rem;
-  }
-
-  .recipe-card {
-    margin: 0 auto;
-  }
-  .temp-section {
-    height: auto;
-    padding: 20px;
-  }
-  .services-section {
-    height: auto;
-    padding: 20px;
-  }
-
-  .expirience-section {
-    height: auto;
-    padding: 20px;
-  }
-
-  .reservation-section {
-    height: auto;
-    padding: 20px;
-  }
-
-  .services-section .title h1 {
-    font-size: 2rem;
+    font-size: var(--font-small);
   }
 
   .container-card {
@@ -280,16 +255,16 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-  .promo-text h1 {
+  .promo-heading {
     font-size: 1.5rem;
   }
 
-  .promo-text p {
-    font-size: 0.8rem;
+  .promo-paragraph {
+    font-size: var(--font-small);
   }
 
   .promo-btn {
-    padding: 6px 12px;
+    padding: var(--padding-small);
     font-size: 0.7rem;
   }
 
@@ -298,18 +273,11 @@ h1 {
   }
 
   .recipes-header .explore-link {
-    font-size: 0.8rem;
-  }
-
-  .recipe-info {
-    font-size: 0.9rem;
-  }
-  .services-section .title h1 {
-    font-size: 1.8rem;
+    font-size: var(--font-small);
   }
 
   .card p {
-    font-size: 0.9rem;
+    font-size: var(--font-medium);
   }
 
   .card .avatar {
