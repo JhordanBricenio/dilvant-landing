@@ -1,5 +1,12 @@
 # LandingPage
 
+![image](https://github.com/user-attachments/assets/f6d678a7-b76e-41a0-b5d6-be7837cc45b0)
+
+![image](https://github.com/user-attachments/assets/0b47177e-c7f5-4b39-9ef7-532745d131b8)
+
+
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
 
 ## Development server
